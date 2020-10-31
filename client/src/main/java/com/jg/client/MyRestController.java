@@ -10,6 +10,8 @@ public class MyRestController {
 
     @GetMapping("/test")
     public String getTest() {
+        log.info("This is an info level log.");
+        log.debug("This is a debug level log.");
         return "Hello World!";
     }
 
