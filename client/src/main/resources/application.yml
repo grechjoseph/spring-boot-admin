@@ -1,0 +1,19 @@
+server:
+  port: 2222
+
+spring:
+  boot:
+    admin:
+      client:
+        instance:
+          name: service-one
+        url: http://localhost:1111
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
